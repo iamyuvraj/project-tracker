@@ -7,7 +7,7 @@ function LandingPage() {
     <div className="landing-container">
       <header className="header">
         <h1>Project Tracker</h1>
-        <p>Track your projects effortlessly.</p>
+        <p>Track Your Projects Effortlessly</p>
         <div className="cta-buttons">
           <Link to="/login">
             <button className="cta-button">Log In</button>
@@ -20,7 +20,7 @@ function LandingPage() {
       <main className="main-content">
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Project Tracker. All rights reserved.</p>
+        <p>&copy; 2024 Project Tracker </p>
       </footer>
     </div>
   );

@@ -19,7 +19,7 @@ function RegisterPage() {
     <div className="register-container">
       <header className="header">
         <h1>Project Tracker</h1>
-        <p>Create your account.</p>
+        <p>Create Your Account</p>
       </header>
       <main className="main-content">
         <form onSubmit={handleRegister} className="register-form">
@@ -35,7 +35,7 @@ function RegisterPage() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
+            placeholder="E-Mail"
             required
             className="register-input"
           />
@@ -51,7 +51,7 @@ function RegisterPage() {
         </form>
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Project Tracker. All rights reserved.</p>
+        <p>&copy; 2024 Project Tracker </p>
       </footer>
     </div>
   );

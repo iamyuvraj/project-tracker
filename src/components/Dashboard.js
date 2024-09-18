@@ -1,26 +1,42 @@
-// Dashboard.js
-import React from 'react';
-import './Dashboard.css'; // Import the new CSS file
+import React, { useState } from 'react';
+import './Dashboard.css';
+import ProjectCard from './ProjectCard';
+import TaskList from './TaskList';
 
-function Dashboard() {
+const Dashboard = () => {
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      name: 'Project Alpha',
+      description: 'Description of Project Alpha',
+      tasks: [
+        { id: 1, title: 'Task 1', completed: false },
+        { id: 2, title: 'Task 2', completed: true },
+      ],
+    },
+    {
+      id: 2,
+      name: 'Project Beta',
+      description: 'Description of Project Beta',
+      tasks: [
+        { id: 1, title: 'Task 1', completed: false },
+        { id: 2, title: 'Task 2', completed: false },
+      ],
+    },
+  ]);
+
   return (
-    <div className="dashboard-container">
-      <header className="header">
-        <h1>Welcome to Your Dashboard</h1>
-        <p>Manage your projects efficiently.</p>
-      </header>
-      <main className="main-content">
-        <div className="card">
-          <h2>Your Projects</h2>
-          <p>Here you can view and manage all your projects.</p>
-          {/* Add more content or components related to projects */}
-        </div>
-      </main>
-      <footer className="footer">
-        <p>&copy; 2024 Project Tracker. All rights reserved.</p>
-      </footer>
+    <div className="dashboard">
+      <h1>Project Tracker Dashboard</h1>
+      <div className="project-list">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+      <h2>Your Tasks</h2>
+      <TaskList projects={projects} />
     </div>
   );
-}
+};
 
 export default Dashboard;

@@ -1,0 +1,11 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: #7f8c8d;
+  }
+  

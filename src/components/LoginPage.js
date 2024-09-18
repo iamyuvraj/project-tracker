@@ -18,7 +18,7 @@ function LoginPage() {
     <div className="login-container">
       <header className="header">
         <h1>Project Tracker</h1>
-        <p>Log in to your account.</p>
+        <p>Log In to Your Account</p>
       </header>
       <main className="main-content">
         <form onSubmit={handleLogin} className="login-form">
@@ -42,7 +42,7 @@ function LoginPage() {
         </form>
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Project Tracker. All rights reserved.</p>
+        <p>&copy; 2024 Project Tracker </p>
       </footer>
     </div>
   );
