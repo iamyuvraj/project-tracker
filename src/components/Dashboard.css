@@ -1,15 +1,27 @@
 .dashboard {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .project-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  h1, h2 {
-    color: #2c3e50;
-  }
-  
+  margin-top: 60px; /* Adjust for fixed navbar */
+  padding: 20px;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects, .activities {
+  margin-top: 30px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
